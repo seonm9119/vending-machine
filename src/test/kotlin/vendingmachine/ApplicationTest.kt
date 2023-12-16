@@ -8,18 +8,6 @@ import org.junit.jupiter.api.Test
 
 class ApplicationTest : NsTest() {
 
-    /*
-    @Test
-    fun 테스트() {
-        assertSimpleTest {
-            run("450", "[콜라,1500,1];[사이다,1000,1]", "1500", "콜라")
-
-        }
-    }
-
-     */
-
-
     @Test
     fun 기능_테스트() {
         assertRandomNumberInListTest(
@@ -34,7 +22,7 @@ class ApplicationTest : NsTest() {
         )
     }
 
-    /*
+
     @Test
     fun 예외_테스트() {
         assertSimpleTest {
@@ -42,10 +30,6 @@ class ApplicationTest : NsTest() {
             assertThat(output()).contains(ERROR_MESSAGE)
         }
     }
-
-     */
-
-
 
     override fun runMain() {
         main()

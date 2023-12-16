@@ -2,8 +2,8 @@ package vendingmachine
 import camp.nextstep.edu.missionutils.Console.readLine
 fun main() {
 
-    println("자판기가 보유하고 있는 금액을 입력해 주세요.")
-    val vendingSum = readLine().toInt()
+    val inputHandler = InputHandler()
+    val vendingSum = inputHandler.readVendingSum()
 
     println("\n자판기가 보유한 동전")
     generateCoin(vendingSum)
